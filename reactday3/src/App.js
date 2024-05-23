@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import MenuItem from './components/MenuItem';
 import { fakeMenuItems, fakeMerchItems } from './fakeData';
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
   
   return (
    <div className='container'>
+    <Navbar />
     <div className="row">
       <div className="col-12">
         <h1 className={"my-3 text-cnet"}>Coffee Shop Menu</h1>
