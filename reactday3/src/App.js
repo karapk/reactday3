@@ -3,6 +3,7 @@ import './App.css';
 import MenuItem from './components/MenuItem';
 import { fakeMenuItems, fakeMerchItems } from './fakeData';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <MenuItem key={merchItem.id} item={merchItem.item} price={merchItem.price} image={merchItem.image} altText={merchItem.item} />
       ))}
     </div>
+    <Footer />
    </div>
   );
 }
