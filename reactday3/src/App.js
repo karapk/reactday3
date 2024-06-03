@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import MenuItem from './components/MenuItem';
 import { fakeMenuItems, fakeMerchItems } from './fakeData';
@@ -7,8 +7,8 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const [menuItems, setMenuItems] = useState(fakeMenuItems)
-  const [merchItems, setMerchItems] = useState(fakeMerchItems)
+  const [menuItems] = useState(fakeMenuItems)
+  const [merchItems] = useState(fakeMerchItems)
   
   return (
    <div className='container'>
