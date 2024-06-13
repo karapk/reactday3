@@ -12,6 +12,7 @@ export default function MenuItem({image, altText, price, item}) {
                         <div className="card-body">     
                             <h5 className="card-title">{item}</h5>
                             <p className="card-text"><small className="text-body-secondary">{`$${price}`}</small></p>
+                            <button className="btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
